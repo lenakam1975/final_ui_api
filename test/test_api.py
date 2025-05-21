@@ -54,7 +54,7 @@ def test_get_search_to_data(expected_status, auth_api):
 @allure.description("API тестирование.Поиск фильма по возрастному рейтингу")
 def test_get_search_to_age(expected_status, auth_api):
     with allure.step("Отправляем GET запрос. "
-                     "Поиск фильма по дате премьеры в России"):
+                     "Поиск фильма по возрастному рейтингу"):
         search_to_age = auth_api.get_search_to_age()
 
     with allure.step("Ожидаем статус == 200"):
@@ -83,7 +83,7 @@ def test_get_search_to_age(expected_status, auth_api):
 @allure.description("API тестирование.Поиск фильма по году")
 def test_get_search_to_year(expected_status, auth_api):
     with allure.step("Отправляем GET запрос. "
-                     "Поиск фильма по дате премьеры в России"):
+                     "Поиск фильма по по году"):
         search_to_year = auth_api.get_search_to_year()
 
     with allure.step("Ожидаем статус == 200"):
@@ -106,7 +106,7 @@ def test_get_search_to_year(expected_status, auth_api):
 @allure.description("API тестирование.Поиск фильма по рейтингу Кинопоиск")
 def test_get_search_to_rating(expected_status, auth_api):
     with allure.step("Отправляем GET запрос. "
-                     "Поиск фильма по дате премьеры в России"):
+                     "Поиск фильма по рейтингу Кинопоиск"):
         search_to_rating = auth_api.get_search_to_rating()
 
     with allure.step("Ожидаем статус == 200"):
