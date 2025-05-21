@@ -83,7 +83,7 @@ def test_get_search_to_age(expected_status, auth_api):
 @allure.description("API тестирование.Поиск фильма по году")
 def test_get_search_to_year(expected_status, auth_api):
     with allure.step("Отправляем GET запрос. "
-                     "Поиск фильма по по году"):
+                     "Поиск фильма по году"):
         search_to_year = auth_api.get_search_to_year()
 
     with allure.step("Ожидаем статус == 200"):
