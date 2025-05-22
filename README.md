@@ -51,6 +51,16 @@
    ```
    Эта команда запустит все тесты и сохранит результаты в директорию `./allure-result`.
 
+2. Запустите тесты ui:
+   ```bash
+   pytest test_ui.py --alluredir allure-result -m tag=ui
+   ```
+   
+3. Запустите тесты api:
+   ```bash
+   pytest test_api.py --alluredir allure-result -m tag=api
+   ```
+
 ## Инструкция по просмотру сформированного отчета Allure
 
    После завершения тестов, чтобы просмотреть отчет, выполните команду:

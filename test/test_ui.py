@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 
+@allure.tag("ui")
 @allure.id("MainPage-1")
 @allure.severity("blocker")
 @allure.title("Клик по кнопке 'Вход'")
@@ -23,6 +24,7 @@ def test_button_entrance(main_page):
         assert new_element.is_displayed(), "Элемент не появился"
 
 
+@allure.tag("ui")
 @allure.id("MainPage-2")
 @allure.severity("critical")
 @allure.title("Ввод текста в строку поиск")
@@ -41,6 +43,7 @@ def test_input(main_page):
         assert new_element.is_displayed(), "Элемент не появился"
 
 
+@allure.tag("ui")
 @allure.id("NoveltiesPage-1")
 @allure.severity("critical")
 @allure.title("Выбор фильма в разделе 'Новинки'")
@@ -64,6 +67,7 @@ def test_novelties(novelties_page):
         print(button_text)
 
 
+@allure.tag("ui")
 @allure.id("MainPage-3")
 @allure.severity("critical")
 @allure.title("Меню навигация на главной странице")
@@ -77,6 +81,7 @@ def test_link_to_page(main_page):
         assert True, "Тест выполнен"
 
 
+@allure.tag("ui")
 @allure.id("ChannelsPage-1")
 @allure.severity("critical")
 @allure.title("Вернуться на главную страницу")

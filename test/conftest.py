@@ -14,7 +14,7 @@ from final_ui_api.api.class_SearchApi import SearchApi
 def browser():
     driver = webdriver.Chrome(
         service=ChromeService(ChromeDriverManager().install()))
-    driver.implicitly_wait(20)
+    driver.implicitly_wait(50)
     driver.maximize_window()
     yield driver
     driver.quit()

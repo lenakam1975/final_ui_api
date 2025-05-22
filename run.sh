@@ -3,4 +3,3 @@ allure serve allure-result # сгенерировать результат те�
 
 pytest alluredir=./reports
 allure serve=./reports
-
