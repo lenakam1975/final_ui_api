@@ -53,12 +53,12 @@
 
 2. Запустите тесты ui:
    ```bash
-   pytest test_ui.py --alluredir allure-result -m tag=ui
+   pytest -m ui
    ```
    
 3. Запустите тесты api:
    ```bash
-   pytest test_api.py --alluredir allure-result -m tag=api
+   pytest -m api
    ```
 
 ## Инструкция по просмотру сформированного отчета Allure

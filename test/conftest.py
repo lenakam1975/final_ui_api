@@ -4,10 +4,10 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-from final_ui_api.pages.class_MainPage import MainPage
-from final_ui_api.pages.class_NoveltiesPage import NoveltiesPage
-from final_ui_api.pages.class_ChannelsPage import ChannelsPage
-from final_ui_api.api.class_SearchApi import SearchApi
+from pages.class_MainPage import MainPage
+from pages.class_NoveltiesPage import NoveltiesPage
+from pages.class_ChannelsPage import ChannelsPage
+from api.class_SearchApi import SearchApi
 
 
 @pytest.fixture(scope="session")

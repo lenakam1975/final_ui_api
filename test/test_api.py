@@ -2,7 +2,7 @@ import pytest
 import allure
 
 
-@allure.tag("api")
+@pytest.mark.api
 @pytest.mark.parametrize("expected_status", [200])
 @allure.id("Api-1")
 @allure.severity("critical")
@@ -24,7 +24,7 @@ def test_get_search_to_name(expected_status, auth_api):
               f"Статус: {expected_status}")
 
 
-@allure.tag("api")
+@pytest.mark.api
 @pytest.mark.parametrize("expected_status", [200])
 @allure.id("Api-2")
 @allure.severity("Major")
@@ -48,7 +48,7 @@ def test_get_search_to_data(expected_status, auth_api):
               f"Статус: {expected_status}")
 
 
-@allure.tag("api")
+@pytest.mark.api
 @pytest.mark.parametrize("expected_status", [200])
 @allure.id("Api-3")
 @allure.severity("critical")
@@ -72,7 +72,7 @@ def test_get_search_to_age(expected_status, auth_api):
               f"Статус: {expected_status}")
 
 
-@allure.tag("api")
+@pytest.mark.api
 @pytest.mark.parametrize("expected_status", [200])
 @allure.id("Api-4")
 @allure.severity("Minor")
@@ -96,7 +96,7 @@ def test_get_search_to_year(expected_status, auth_api):
               f"Статус: {expected_status}")
 
 
-@allure.tag("api")
+@pytest.mark.api
 @pytest.mark.parametrize("expected_status", [200])
 @allure.id("Api-5")
 @allure.severity("critical")
