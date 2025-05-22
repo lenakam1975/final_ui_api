@@ -65,14 +65,8 @@ def test_get_search_to_age(expected_status, auth_api):
         assert len(search_to_age) > 0
 
     with allure.step("Логируем полученные данные"):
-        for movie in search_to_age['docs']:
-            print(
-                f"Статус: {expected_status}, "
-                f"Полученные данные: (ID: {movie['id']}, "
-                f"Название: {movie['name'] or movie['alternativeName']}, "
-                f"Год: {movie['year']}, "
-                f"Рейтинг KP: {movie['rating']['kp']})"
-            )
+        print(f"Полученные данные: {search_to_age}, "
+              f"Статус: {expected_status}")
 
 
 @pytest.mark.parametrize("expected_status", [200])
@@ -117,10 +111,5 @@ def test_get_search_to_rating(expected_status, auth_api):
         assert len(search_to_rating) > 0
 
     with allure.step("Логируем полученные данные"):
-        for movie in search_to_rating['docs']:
-            print(
-                f"Статус: {expected_status}, "
-                f"Полученные данные: (ID: {movie['id']}, "
-                f"Название: {movie['name'] or movie['alternativeName']} "
-                f"Рейтинг KP: {movie['rating']['kp']})"
-            )
+        print(f"Полученные данные: {search_to_rating}, "
+              f"Статус: {expected_status}")
